@@ -16,7 +16,6 @@ namespace HutongGames.PlayMaker.Actions
         [Tooltip("The name of the button. Set in the Unity Input Manager.")]
 		public FsmString buttonName2;
 		
-		[RequiredField]
         [Tooltip("The name of the button. Set in the Unity Input Manager.")]
 		public FsmString buttonName3;
 		
@@ -61,7 +60,7 @@ namespace HutongGames.PlayMaker.Actions
 			var left_value=false;
 			var right_value=false;
 			
-			if (buttonName3== null)
+			if (buttonName3.IsNone)
 			{
 				button3= true;
 			}
